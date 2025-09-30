@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="menu">
+      <button onclick="startOffline()">Play Offline</button>
+      <input type="text" id="roomCode" placeholder="Enter room code" />
+      <button onclick="createRoom()">Create Room</button>
+      <button onclick="joinRoom()">Join Room</button>
+    </div>
+
+    <div id="status">Waiting...</div>
+
+    <div class="board" id="board"></div>
+
+    <button onclick="resetGame()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
